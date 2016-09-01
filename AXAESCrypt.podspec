@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/devedbox/AXAESCrypt.git', :tag => '0.0.1' }
   s.source_files  = 'AXAESCrypt/AXAESCrypt/*.{h,m}', 'AXAESCrypt/AXAESCrypt/AESCrypt/*.{h,m}'
 
+  s.module_map = 'AXAESCrypt/AXAESCrypt/module.modulemap'
+
   s.frameworks = 'UIKit', 'Foundation'
 
   s.requires_arc = true

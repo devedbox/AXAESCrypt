@@ -62,7 +62,6 @@
 		01D5A7EC1D78719E003CBEE1 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		01D5A7ED1D78719E003CBEE1 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		01D5A7EE1D78719E003CBEE1 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
-		01D5A7F41D7873AC003CBEE1 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +157,6 @@
 			children = (
 				01D5A7EE1D78719E003CBEE1 /* AESCrypt.h */,
 				01D5A7E81D78719E003CBEE1 /* AESCrypt */,
-				01D5A7F41D7873AC003CBEE1 /* module.modulemap */,
 			);
 			path = AXAESCrypt;
 			sourceTree = "<group>";

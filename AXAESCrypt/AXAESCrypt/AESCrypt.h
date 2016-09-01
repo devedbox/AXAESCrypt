@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CommonCrypto/CommonCryptor.h>
-#import <CommonCrypto/CommonHMAC.h>
+
+typedef int32_t CCCryptorStatus;
+typedef uint32_t CCAlgorithm;
+typedef uint32_t CCOptions;
+typedef uint32_t CCHmacAlgorithm;
 
 @interface AESCrypt : NSObject
 + (NSString *)encrypt:(NSString *)message password:(NSString *)password;
