@@ -15,6 +15,11 @@
 		01D5A7C41D787168003CBEE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D5A7C21D787168003CBEE1 /* LaunchScreen.storyboard */; };
 		01D5A7CF1D787168003CBEE1 /* AXAESCryptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5A7CE1D787168003CBEE1 /* AXAESCryptTests.m */; };
 		01D5A7DA1D787168003CBEE1 /* AXAESCryptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5A7D91D787168003CBEE1 /* AXAESCryptUITests.m */; };
+		01D5A7EF1D78719E003CBEE1 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5A7E91D78719E003CBEE1 /* AESCrypt.m */; };
+		01D5A7F01D78719E003CBEE1 /* NSData+AES256Cryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5A7EA1D78719E003CBEE1 /* NSData+AES256Cryptor.m */; };
+		01D5A7F11D78719E003CBEE1 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5A7EB1D78719E003CBEE1 /* NSData+Base64.m */; };
+		01D5A7F21D78719E003CBEE1 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5A7EC1D78719E003CBEE1 /* NSData+CommonCrypto.m */; };
+		01D5A7F31D78719E003CBEE1 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5A7ED1D78719E003CBEE1 /* NSString+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		01D5A7D51D787168003CBEE1 /* AXAESCryptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AXAESCryptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D5A7D91D787168003CBEE1 /* AXAESCryptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXAESCryptUITests.m; sourceTree = "<group>"; };
 		01D5A7DB1D787168003CBEE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D5A7E91D78719E003CBEE1 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		01D5A7EA1D78719E003CBEE1 /* NSData+AES256Cryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256Cryptor.m"; sourceTree = "<group>"; };
+		01D5A7EB1D78719E003CBEE1 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		01D5A7EC1D78719E003CBEE1 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		01D5A7ED1D78719E003CBEE1 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		01D5A7EE1D78719E003CBEE1 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +117,7 @@
 				01D5A7BA1D787168003CBEE1 /* ViewController.h */,
 				01D5A7BB1D787168003CBEE1 /* ViewController.m */,
 				01D5A7BD1D787168003CBEE1 /* Main.storyboard */,
+				01D5A7E71D78719E003CBEE1 /* AXAESCrypt */,
 				01D5A7C01D787168003CBEE1 /* Assets.xcassets */,
 				01D5A7C21D787168003CBEE1 /* LaunchScreen.storyboard */,
 				01D5A7C51D787168003CBEE1 /* Info.plist */,
@@ -138,6 +150,27 @@
 				01D5A7DB1D787168003CBEE1 /* Info.plist */,
 			);
 			path = AXAESCryptUITests;
+			sourceTree = "<group>";
+		};
+		01D5A7E71D78719E003CBEE1 /* AXAESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				01D5A7E81D78719E003CBEE1 /* AESCrypt */,
+				01D5A7EE1D78719E003CBEE1 /* AESCrypt.h */,
+			);
+			path = AXAESCrypt;
+			sourceTree = "<group>";
+		};
+		01D5A7E81D78719E003CBEE1 /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				01D5A7E91D78719E003CBEE1 /* AESCrypt.m */,
+				01D5A7EA1D78719E003CBEE1 /* NSData+AES256Cryptor.m */,
+				01D5A7EB1D78719E003CBEE1 /* NSData+Base64.m */,
+				01D5A7EC1D78719E003CBEE1 /* NSData+CommonCrypto.m */,
+				01D5A7ED1D78719E003CBEE1 /* NSString+Base64.m */,
+			);
+			path = AESCrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D5A7F01D78719E003CBEE1 /* NSData+AES256Cryptor.m in Sources */,
+				01D5A7EF1D78719E003CBEE1 /* AESCrypt.m in Sources */,
 				01D5A7BC1D787168003CBEE1 /* ViewController.m in Sources */,
 				01D5A7B91D787168003CBEE1 /* AppDelegate.m in Sources */,
+				01D5A7F31D78719E003CBEE1 /* NSString+Base64.m in Sources */,
 				01D5A7B61D787168003CBEE1 /* main.m in Sources */,
+				01D5A7F11D78719E003CBEE1 /* NSData+Base64.m in Sources */,
+				01D5A7F21D78719E003CBEE1 /* NSData+CommonCrypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
